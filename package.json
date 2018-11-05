@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "react": "^16.6.7",
+    "react-dom": "^16.6.7"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/parcel index.html",
+    "watch": "./node_modules/.bin/parcel watch index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.10.3"
+  }
+}
