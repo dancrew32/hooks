@@ -15,6 +15,14 @@ const reducer = (state, action) => {
   }
 };
 
-export const getReducer = () => {
-  return useReducer(reducer, initialState);
+const mapDispatch = (dispatch) => ({
+  reset: () => dispatch({ type: 'reset' }),
+  addTest: () => dispatch({ type: 'addTest' }),
+  removeTest: () => dispatch({ type: 'removeTest' })
+});
+
+export const getStateAndActions = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const actions = mapDispatch(dispatch);
+  return [state, actions];
 };
