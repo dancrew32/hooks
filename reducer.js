@@ -16,9 +16,9 @@ const reducer = (state, action) => {
 };
 
 const mapDispatch = (dispatch) => ({
-  reset: () => dispatch({ type: 'reset' }),
-  addTest: () => dispatch({ type: 'addTest' }),
-  removeTest: () => dispatch({ type: 'removeTest' })
+  reset: () => dispatch({type: 'reset'}),
+  addTest: () => dispatch({type: 'addTest'}),
+  removeTest: () => dispatch({type: 'removeTest'})
 });
 
 export const getStateAndActions = () => {
