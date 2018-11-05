@@ -1,6 +1,5 @@
 deps:
-	yarn add react react-dom
-	yarn add --dev parcel-bundler
+	yarn install
 
 start:
 	yarn start
